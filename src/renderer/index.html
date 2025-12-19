@@ -1,0 +1,15 @@
+<body style="margin:0;display:flex;height:100vh">
+  <webview
+    id="webview"
+    src="https://google.com"
+    style="flex:3"
+    preload="../webview/preload-webview.js"
+  ></webview>
+
+  <div style="flex:1;border-left:1px solid #ddd">
+    <div id="chat"></div>
+    <input id="input" placeholder="Ask Netra..." />
+  </div>
+
+  <script type="module" src="./renderer.js"></script>
+</body>
